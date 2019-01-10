@@ -1,0 +1,30 @@
+ul {
+  list-style: none;
+  margin: 1em;
+  padding: 1em;
+  border: solid 1px #ccc;
+  width: 320px;
+}
+
+li {
+  transition: color 2s ease;
+  display: flex;
+  justify-content: space-between;
+}
+
+li:not(:first-child) {
+  padding-top: 1em; 
+}
+
+li:not(:last-child) {
+  border-bottom: dotted 1px #ccc;
+  padding-bottom: 1em;
+}
+
+.on {
+  color: green;
+}
+
+.off {
+  color: gray;
+}

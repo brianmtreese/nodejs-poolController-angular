@@ -1,0 +1,11 @@
+<ul>
+  <li
+    *ngFor="let circuit of circuits"
+    [class.on]="circuit.status === 1"
+    [class.off]="circuit.status === 0">
+    <strong>{{ circuit.name }}</strong>
+    <em>{{ circuit.status === 1 ? 'On' : 'Off' }}</em>
+  </li>
+</ul>
+
+<router-outlet></router-outlet>
